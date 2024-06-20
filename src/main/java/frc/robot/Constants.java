@@ -45,4 +45,58 @@ public final class Constants {
 
         public static final double GEAR_RATIO = 1.0;
     }
+
+    public static class Launcher{
+        public final static MotorConfig FLYWHEEL_LEFT_MOTOR = new MotorConfig(
+            -1,
+            40,
+            false,
+            new PIDConfig(0.0, 0.0, 0.0, 0.0),
+            Mode.COAST
+        );
+
+        public final static MotorConfig FLYWHEEL_RIGHT_MOTOR = new MotorConfig(
+            -1,
+            40,
+            false,
+            new PIDConfig(0.0, 0.0, 0.0, 0.0),
+            Mode.COAST
+        );
+
+        public final static MotorConfig INDEXER_MOTOR = new MotorConfig(
+            -1,
+            35,
+            false,
+            new PIDConfig(0.0, 0.0, 0.0, 0.0),
+            Mode.COAST
+        );
+
+        public static final double G = 0.0;
+        public static final double S = 0.0;
+        public static final double V = 0.0;
+
+        public static final double indexerG = 0.0;
+        public static final double indexerS = 0.0;
+        public static final double indexerV = 0.0;
+    }
+
+    public static class Climb{
+        public final static MotorConfig CLIMB_LEFT_MOTOR = new MotorConfig(
+            -1,
+            60,
+            false,
+            new PIDConfig(0.0, 0.0, 0.0, 0.0),
+            Mode.COAST
+        );
+
+        public final static MotorConfig CLIMB_RIGHT_MOTOR = new MotorConfig(
+            -1,
+            60,
+            false,
+            new PIDConfig(0.0, 0.0, 0.0, 0.0),
+            Mode.COAST
+        );
+
+        public static final double GEAR_RATIO = 1.0;
+    }
 }
